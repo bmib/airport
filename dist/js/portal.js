@@ -2,27 +2,44 @@ var systemTitle = "机场安全监管系统";
 
 //角色
 var roleJson = [
-				{ "UUID": "A1", "NAME": "局方监察员", "USER": "张三" },
-				{ "UUID": "A2", "NAME": "管理局监察员", "USER": "李四" },
-				{ "UUID": "A3", "NAME": "监管局监察员", "USER": "王五" },
-				{ "UUID": "A4", "NAME": "机场用户", "USER": "陈六" },
-				{ "UUID": "A5", "NAME": "管理员", "USER": "何华杰" }
+	{ "UUID": "A1", "NAME": "管理员", "USER": "用户1" },
+	{ "UUID": "A2", "NAME": "机场管理机构人员", "USER": "用户2" },
+	{ "UUID": "A3", "NAME": "局方监察员", "USER": "用户3" },
+	{ "UUID": "A4", "NAME": "管理局监察员", "USER": "用户4" },
+	{ "UUID": "A5", "NAME": "监管局监察员", "USER": "用户5" }			
 ];
 
 //菜单组数据
 var menuGroupJson = [
-    { "UUID": "B1", "NAME": "机场使用许可证管理", "ROLEID": "A5" },
-    { "UUID": "B2", "NAME": "现场安全检查", "ROLEID": "A5" },
-    { "UUID": "B3", "NAME": "飞行区报告", "ROLEID": "A5" },
-    { "UUID": "B4", "NAME": "不停航施工", "ROLEID": "A5" },
-    { "UUID": "B5", "NAME": "人员管理", "ROLEID": "A5" },
-    { "UUID": "B6", "NAME": "机场信息库", "ROLEID": "A5" },
-    { "UUID": "B7", "NAME": "规章管理", "ROLEID": "A5" }
+	{ "UUID": "B1", "NAME": "许可证管理", "ROLEID": "A1" },
+    { "UUID": "B2", "NAME": "现场安全检查", "ROLEID": "A1" },
+    { "UUID": "B3", "NAME": "飞行区报告", "ROLEID": "A1" },
+    { "UUID": "B4", "NAME": "不停航施工", "ROLEID": "A1" },
+    { "UUID": "B5", "NAME": "人员管理", "ROLEID": "A1" },
+    { "UUID": "B6", "NAME": "机场信息库", "ROLEID": "A1" },
+    { "UUID": "B7", "NAME": "规章管理", "ROLEID": "A1" },
+	
+    { "UUID": "B8", "NAME": "许可证", "ROLEID": "A2" },
+    { "UUID": "B9", "NAME": "安全检查", "ROLEID": "A2" },
+    { "UUID": "B10", "NAME": "飞行区报告", "ROLEID": "A2" },
+    { "UUID": "B11", "NAME": "不停航施工", "ROLEID": "A2" },
+    { "UUID": "B12", "NAME": "人员库", "ROLEID": "A2" },
+    { "UUID": "B13", "NAME": "机场信息库", "ROLEID": "A2" },
+    { "UUID": "B14", "NAME": "规章管理", "ROLEID": "A2" }
 ];
 
 //菜单数据
 var menuJson = [
-    { "UUID": "C1", "NAME": "许可证申请", "MENUGROUPID": "B1", "SELECTED": true, "PAGEURL": "pages/examples/leftFrame.html" }
+    { "UUID": "C1", "NAME": "许可证申请", "MENUGROUPID": "B8", "SELECTED": true, "PAGEURL": "pages/airport/apply.html" },
+	{ "UUID": "C2", "NAME": "许可证变更", "MENUGROUPID": "B8", "SELECTED": true, "PAGEURL": "pages/airport/apply.html" },
+	{ "UUID": "C3", "NAME": "许可证注销", "MENUGROUPID": "B8", "SELECTED": true, "PAGEURL": "pages/airport/apply.html" },
+	{ "UUID": "C4", "NAME": "机场使用手册修订", "MENUGROUPID": "B8", "SELECTED": true, "PAGEURL": "pages/airport/apply.html" },
+	
+	{ "UUID": "C5", "NAME": "整改措施", "MENUGROUPID": "B9", "SELECTED": true, "PAGEURL": "pages/airport/apply.html" },
+	
+	{ "UUID": "C6", "NAME": "快报", "MENUGROUPID": "B10", "SELECTED": true, "PAGEURL": "pages/airport/apply.html" },
+	{ "UUID": "C7", "NAME": "周报", "MENUGROUPID": "B10", "SELECTED": true, "PAGEURL": "pages/airport/apply.html" },
+	{ "UUID": "C8", "NAME": "月报", "MENUGROUPID": "B10", "SELECTED": true, "PAGEURL": "pages/airport/apply.html" }
 ];
 
 $(function () {
